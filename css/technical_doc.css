@@ -1,0 +1,22 @@
+body{
+  display: flex;
+  flex-direction: row;
+}
+nav{
+  background-color: grey;
+
+}
+a{
+  color: white;
+  font-style: normal;
+  text-decoration: none;
+}
+main{
+
+}
+header{
+  font-weight: bold;
+}
+legend{
+  text-align: left;
+}
