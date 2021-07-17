@@ -2,29 +2,37 @@ body{
   display: flex;
   flex-direction: row;
   background-color: #BAE6D6;
-
+  padding: 1em 4em 0 0;
 }
 nav{
-  background-color: grey;
-  margin-right: 20px;
+  background-color: #346755;
+  margin-right: 2em;
+  padding: 2em;
 }
-a{
+
+nav a{
+  display: block;
   color: white;
   font-style: normal;
   text-decoration: none;
+  line-height: 40px;
+  font-size: 20px;
 }
-.nav-link-box{
-
+nav a:hover{
+  color:#74E6BE;
 }
-main{
-
+a:hover{
+  color:#346755;
+}
+nav header{
+  font-size: 25px;
+  color: #74E6BE;
 }
 header{
   font-weight: bold;
+  font-family: monospace;
+  font-size: 20px;
 }
-legend{
-}
-
 pre {
     background: hsl(159, 17%, 80%);
     border: 1px solid #ddd;
@@ -45,13 +53,30 @@ pre {
 code{
 
 }
+li {
+}
+@media screen and (max-width: 993px) {
+  pre{
+    width: 80%;
+  }
+}
 @media screen and (max-width: 767px) {
   body{
     flex-direction: column;
+    padding: 0;
   }
   pre{
     margin: auto;
   }
+  a{
+    display: initial;
+    margin-right: 10px;
+    white-space: normal;
+  }
+  nav{
+    margin-right: auto;
+  }
+
 }
 @media screen and (max-width: 594px){
   pre{
