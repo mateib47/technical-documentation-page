@@ -13,9 +13,9 @@
       <div class="nav-link-box">
         <a href="#Introduction" class="nav-link">Introduction</a>
         <a href="#History" class="nav-link">History</a>
-        <a href="#Principles" class="nav-link">Principles</a>
-        <a href="#" class="nav-link"></a>
-        <a href="#" class="nav-link"></a>
+        <a href="#Principles" class="nav-link">Principles</a><br>
+        <a href="#Code_Snippets" class="nav-link">Code Snippets</a>
+        <a href="#Importance" class="nav-link">Importance</a>
       </div>
     </nav>
     <main id="main-doc">
@@ -55,17 +55,53 @@
         </ol>
       </section>
       <section class="main-section">
-        <header id="">Hello world</header>
+        <header id="Code_Snippets">Code Snippets</header>
         <p>The traditional Hello world program can be written in Java as:</p>
-        <pre><code>public class HelloWorldApp {
+        <pre><code id="Hello_World">public class HelloWorldApp {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         // Prints the string to the console.
     }
 } </code></pre>
+        <p>The sum of two numbers where we specify the value of both the numbers in the program itself</p>
+        <pre><code>public class AddTwoNumbers {
+   public static void main(String[] args) {
+      int num1 = 5, num2 = 15, sum;
+      sum = num1 + num2;
+      System.out.println("The sum is: "+sum);
+   }
+}</code></pre>
+        <p>Output:</p>
+        <pre><code>The sum is: 20</code></pre>
+        <p>This program takes both the numbers (entered by user) and prints the sum</p>
+        <pre><code>import java.util.Scanner;
+public class AddTwoNumbers2 {
+
+    public static void main(String[] args) {
+
+        int num1, num2, sum;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 1st Number: ");
+        num1 = sc.nextInt();
+
+        System.out.println("Enter 2nd Number: ");
+        num2 = sc.nextInt();
+
+        sc.close();
+        sum = num1 + num2;
+        System.out.println("The sum is: "+sum);
+    }
+}</code></pre>
+        <p>Output:</p>
+        <pre><code>Enter First Number:
+121
+Enter Second Number:
+19
+Sum of these numbers: 140</code></pre>
       </section>
       <section class="main-section">
-        <header id="">Lorem ipsum</header>
+        <header id="Importance">Importance</header>
+        <p>While the world of technology is constantly advancing, at what seems like a faster than ever pace, people, even coders, have a unfortunate tendency to forget about the origins. The underlying principles. The ideas which influenced an abundance of modern-day technology. This is why Java is important- because not only does it continue to be a vital and invaluable programming language today, but it shaped the manner in which technology would unfold in the coming two decades, and continue to unfold for the unforeseeable future.</p>
       </section>
     </main>
   </body>

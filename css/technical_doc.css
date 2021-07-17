@@ -13,6 +13,9 @@ a{
   font-style: normal;
   text-decoration: none;
 }
+.nav-link-box{
+  
+}
 main{
 
 }
@@ -51,8 +54,8 @@ code{
     margin: auto;
   }
 }
-@media screen and (max-width: 543px){
+@media screen and (max-width: 594px){
   pre{
-    white-space:normal; 
+    white-space:normal;
   }
 }
